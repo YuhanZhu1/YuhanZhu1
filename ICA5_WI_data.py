@@ -31,5 +31,5 @@ joint = st.sidebar.button("Jointplot")
 
 if joint:
     st.write("Area mean vs concavity mean joint plot")
-    fig2 = sns.jointplot(data,x = "area_mean",y = "concavity_mean",hue="diagnosis")
+    fig2 = sns.jointplot(data=data,x = "area_mean",y = "concavity_mean",hue="diagnosis")
     st.pyplot(fig2)
